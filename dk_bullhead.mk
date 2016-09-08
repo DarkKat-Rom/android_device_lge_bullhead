@@ -54,7 +54,7 @@ BOARD_NEEDS_VENDORIMAGE_SYMLINK := true
 
 # Bootanimation
 PRODUCT_COPY_FILES += \
-  device/lge/hammerhead/bootanimation/bootanimation.zip:system/media/bootanimation.zip
+  device/lge/bullhead/bootanimation/bootanimation.zip:system/media/bootanimation.zip
 
 $(call inherit-product, device/lge/bullhead/device.mk)
 $(call inherit-product-if-exists, vendor/lge/bullhead/device-vendor.mk)
