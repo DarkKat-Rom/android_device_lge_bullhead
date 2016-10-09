@@ -33,10 +33,6 @@ PRODUCT_BRAND := Android
 PRODUCT_MODEL := Nexus 5X
 PRODUCT_MANUFACTURER := LGE
 
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    BUILD_FINGERPRINT="google/bullhead/bullhead:7.0/NBD90W/3239497:user/release-keys" \
-    PRIVATE_BUILD_DESC="bullhead-user 7.0 NBD90W 3239497 release-keys"
-
 # Kernel inline build
 TARGET_KERNEL_SOURCE := kernel/msm/bullhead
 TARGET_KERNEL_CONFIG := bullhead_defconfig
