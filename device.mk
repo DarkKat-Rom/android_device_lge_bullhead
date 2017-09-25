@@ -364,7 +364,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Write Manufacturer & Model information in created media files.
 # IMPORTANT: ONLY SET THIS PROPERTY TO TRUE FOR PUBLIC DEVICES
-ifneq ($(filter aosp_bullhead% bullhead%, $(TARGET_PRODUCT)),)
+ifneq ($(filter aosp_bullhead% bullhead% dk_bullhead%, $(TARGET_PRODUCT)),)
 PRODUCT_PROPERTY_OVERRIDES += \
     media.recorder.show_manufacturer_and_model=true
 else
@@ -565,11 +565,6 @@ ifeq ($(NATIVE_COVERAGE),true)
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vts.coverage=1
 endif
-
-# setup dm-verity configs.
-PRODUCT_SYSTEM_VERITY_PARTITION := /dev/block/platform/soc.0/f9824900.sdhci/by-name/system
-PRODUCT_VENDOR_VERITY_PARTITION := /dev/block/platform/soc.0/f9824900.sdhci/by-name/vendor
-$(call inherit-product, build/target/product/verity.mk)
 
 # OEM Unlock reporting
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
