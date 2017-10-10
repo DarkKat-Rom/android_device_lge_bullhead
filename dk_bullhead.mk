@@ -36,8 +36,6 @@ PRODUCT_MANUFACTURER := LGE
 # Enable vendor image symlink
 BOARD_NEEDS_VENDORIMAGE_SYMLINK := true
 
-BLOCK_BASED_OTA := false
-
 # Bootanimation
 PRODUCT_COPY_FILES += \
   device/lge/bullhead/bootanimation/bootanimation.zip:system/media/bootanimation.zip
